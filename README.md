@@ -30,13 +30,14 @@ A custom Ubuntu Server (Ubuntu Server) with desktop environment and preconfigure
 # Connect to ubus remotely
 - SSH
   ```bash
-  ssh -p 4022 ubus@localhost
+  ssh -p 4022 ubus@local_ip
   ```
 - vnc client
   ```
-  VNCserver = 127.0.0.1:45900
+  VNCserver = local_ip:45900
   password = toor
   ```
+  > `Note`: To access services remotely, port should be allowed through firewall from host machine.
   
 # License 
 [GNU General Public License v3.0](https://github.com/dmdhrumilmistry/Ubus/blob/main/LICENSE)
